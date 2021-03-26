@@ -26,18 +26,18 @@ class PerfTest extends Simulation {
         
 
   setUp(
-    // createCollection.inject(
-    //     atOnceUsers(1),
-    //     nothingFor(4.seconds),
-    //     rampUsers(5).during(10.seconds)
-    //     // ,constantUsersPerSec(20).during(15.seconds)
-    //     ).protocols(protocol)
-
-    createCollectionDataDriven.inject(
+    createCollection.inject(
         atOnceUsers(1),
         nothingFor(4.seconds),
         rampUsers(5).during(10.seconds)
+        // ,constantUsersPerSec(20).during(15.seconds)
         ).protocols(protocol)
+
+    // createCollectionDataDriven.inject(
+    //     atOnceUsers(1),
+    //     nothingFor(4.seconds),
+    //     rampUsers(5).during(10.seconds)
+    //     ).protocols(protocol)
   )
 
 }

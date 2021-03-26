@@ -2,3 +2,5 @@
 .project
 .settings/
 .vscode/
+./src/test/java/karate-config.js
+./target/
